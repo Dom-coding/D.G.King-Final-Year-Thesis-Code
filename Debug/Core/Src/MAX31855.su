@@ -1,0 +1,4 @@
+MAX31855.c:29:7:Max31855_Read_Temp1	24	static
+MAX31855.c:54:7:Max31855_Read_Temp2	24	static
+MAX31855.c:80:7:Max31855_Read_Temp3	24	static
+MAX31855.c:106:7:Max31855_Read_Temp4	24	static
