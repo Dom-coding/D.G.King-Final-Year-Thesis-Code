@@ -211,7 +211,7 @@ int main(void)
 
 
 	//------------------------------------------test temp motor--------------------------------------
-	__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1,75);
+	/*__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1,75);
 	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET);   // Start temp motor CCW rotation
 	 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,GPIO_PIN_SET); // Start temp motor CCW rotation
 	 HAL_Delay(20000);
@@ -225,7 +225,7 @@ int main(void)
 	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_SET);   // Start temp motor CW rotation
 	 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,GPIO_PIN_RESET); // Start temp motor CW rotation
 	 HAL_Delay(40000);
-	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET); // Stop temp motor CW rotation
+	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET); // Stop temp motor CW rotation*/
 	//--------------------------------------------end test temp motor----------------------------
   /* USER CODE END 2 */
 
@@ -336,7 +336,7 @@ int main(void)
 	   		ADCval[3] = HAL_ADC_GetValue(&hadc1);
 	   		HAL_ADC_Stop(&hadc1);
 
-/*	   		if(ADCval[0] > 1000) //--------------------------- //upper right is in shadow therefore move down and/or left
+	   		if(ADCval[0] > 1000) //--------------------------- //upper right is in shadow therefore move down and/or left
 	   		{
 	   			if(ADCval[1] > 1000) //both upper LDRs in shadow therefore tilt down
 	   			{
@@ -416,10 +416,10 @@ int main(void)
 			   		HAL_Delay(500);
 			   		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_10,GPIO_PIN_RESET); // Stop pitch motor counter clock wise rotation
 	   			}
-	   		}*/
+	   		}
 
 	   //---------------------------------------------------------------------------------temperature control motor-----------------
-	  /* if(avetemp = setTemp-3) //temperature reaches lower bound
+	   if(avetemp = setTemp-3) //temperature reaches lower bound
 	   {
  			 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET);   // Start temp motor CCW rotation
  			 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,GPIO_PIN_SET); // Start temp motor CCW rotation
@@ -442,7 +442,7 @@ int main(void)
 			 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,GPIO_PIN_RESET); // Start temp motor CW rotation
 			 HAL_Delay(40000);
 			 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET); // Stop temp motor CW rotation
-	   }*/
+	   }
 	   //----------------------------------------------------------------------------------end of temperature control motor--------------
 
     /* USER CODE END WHILE */
