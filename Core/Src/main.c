@@ -209,24 +209,6 @@ int main(void)
 	HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_2);  //PB0 Start pwm pitch motor 100% duty cycle
 	HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_3);  //PB0 Start pwm azimuth motor 100% duty cycle
 
-
-	//------------------------------------------test temp motor--------------------------------------
-	/*__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1,75);
-	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET);   // Start temp motor CCW rotation
-	 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,GPIO_PIN_SET); // Start temp motor CCW rotation
-	 HAL_Delay(20000);
-	 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,GPIO_PIN_RESET);   // Stop temp motor CCW rotation
-	 HAL_Delay(5000);
-	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET);   // Start temp motor CCW rotation
-	 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,GPIO_PIN_SET); // Start temp motor CCW rotation
-	 HAL_Delay(20000);
-	 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,GPIO_PIN_RESET);   // Stop temp motor CCW rotation
-	 HAL_Delay(5000);
-	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_SET);   // Start temp motor CW rotation
-	 HAL_GPIO_WritePin(GPIOC,GPIO_PIN_9,GPIO_PIN_RESET); // Start temp motor CW rotation
-	 HAL_Delay(40000);
-	 HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,GPIO_PIN_RESET); // Stop temp motor CW rotation*/
-	//--------------------------------------------end test temp motor----------------------------
   /* USER CODE END 2 */
 
   /* Infinite loop */
